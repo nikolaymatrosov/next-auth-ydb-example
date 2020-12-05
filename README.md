@@ -11,6 +11,14 @@ cp .env.local.example .env.local
 ```
 
 Then, you'll need to fill at least one of the authentication providers by adding the required secrets for it, be that in the form of OAuth keys/secrets from a provider (Google, Twitter, etc.) or an SMTP connection string to enable email authentication.
+Then add YDB database name and path to JSON file containing service account credentials you can create like this:
+
+```bash
+yc iam key create --output sa.json --service-account-name $service_account_name
+```
+
+Additionally, you'll need to provide credentials to Mailgun API to send emails. Or you can use your favorite email service.
+It can be configured [here](https://github.com/nikolaymatrosov/next-auth-ydb-example/blob/master/lib/sendVerificationRequest.ts)
 
 More details about the providers can be found [here](https://next-auth.js.org/configuration/providers), and for a more complete introduction to `next-auth` check out their [introduction guide](https://next-auth.js.org/getting-started/introduction)
 
