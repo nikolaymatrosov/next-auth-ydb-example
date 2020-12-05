@@ -1,5 +1,6 @@
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import React from 'react'
 
 const NextAuth = () => (
   <>
@@ -17,10 +18,7 @@ const NextAuth = () => (
         <a href="https://next-auth-example.now.sh">next-auth-example.now.sh</a>
       </p>
       <p>
-        This live demo uses an in-memory database which is automatically erased
-        after ~2 hours. More permanent user databases, etc. can be easily
-        created by defining a db connector your .env file, see{' '}
-        <a href="https://next-auth.js.org/configuration/database">docs</a>
+        This demo uses YDB as backend.
       </p>
     </main>
     <Footer />

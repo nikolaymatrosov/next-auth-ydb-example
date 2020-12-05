@@ -1,4 +1,5 @@
 import { Provider } from 'next-auth/client'
+import React from 'react'
 import '../styles.css'
 
 const App = ({ Component, pageProps }) => {
