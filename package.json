@@ -14,7 +14,7 @@
     "react-dom": "^16.13.1",
     "sqlite3": "^5.0.0",
     "uuid": "^8.3.1",
-    "ydb-sdk": "^1.6.0",
+    "ydb-sdk": "^1.7.0",
     "mailgun.js": "^2.0.1"
   },
   "devDependencies": {
